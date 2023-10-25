@@ -1,0 +1,116 @@
+/* Styling for larger screens */
+.user-card-list {
+  display: grid;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.user-card-upper {
+  flex: 1;
+  background-color: #4a90e2; 
+  color: #fff; 
+  padding: 40px;
+  border-bottom: 1px solid #ddd; 
+  position: relative; 
+}
+
+.user-card-lower {
+  flex: 1;
+  background-color: #fff; 
+  padding-bottom: 50px;
+  margin-top: 30px;
+  color: #686870;
+}
+
+.user-avatar {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 100px;
+  height: 100px;
+  border: 3px solid #fff; 
+  border-radius: 50%; 
+  overflow: hidden; 
+  background-color: #c2cad4;
+  margin-top: 30px;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.user-name {
+  size: 120px;
+}
+
+
+/* Styling for smaller screens */
+
+@media (max-width: 780px) {
+  .user-card-list {
+    grid-template-columns: repeat(1, 1fr);  
+    justify-content: center;
+    margin-bottom: 20px;
+
+
+  } 
+  .user-card {
+    width: 100%;
+    margin-bottom: 20px;
+    justify-items: center;
+
+  }}
+
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  justify-content: center;
+
+  padding: 10px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 1px solid #8b0000;
+  color: #8b0000;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: #df944f;
+  background-color: #df954f2c;
+}
+
+.paginationActive a {
+  color: #df944f;
+  background-color: #df954f2c;
+}
+
+.paginationDisabled a {
+  color: grey;
+  background-color: rgba(128, 128, 128, 0.185);
+}
