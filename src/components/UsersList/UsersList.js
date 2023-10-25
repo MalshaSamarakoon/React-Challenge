@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./UsersList.css";
 import axios from "axios"; 
 import ReactPaginate from "react-paginate";
+import { Link } from "react-router-dom";
 
 function generateRandomColor() {
   let color = "rgba(";
@@ -57,6 +58,8 @@ const UsersList = () => {
               </h2>
               <p className="user-email">{user.email}</p>
               <p className="user-phone">{user.phone}</p>
+              <Link to={`/user/${user.id}`}> click </Link>
+
             </div>
           </div>
         </div>

@@ -1,16 +1,13 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import UsersList from './UsersList/UsersList'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import styled from "styled-components";
+import UserDetails from "./UserDetails/UserDetails";
 
 const Main = () => {
-    return (
-        <main>
-            <Routes>
-                <Route path="/" element={<UsersList />}></Route>
-                {/* Add UserDetails routes here... */}
-            </Routes>
-        </main>
-    )
-}
+  return (
+      <Routes>
+        <Route path="/user/:userId" element={<UserDetails />} />
+      </Routes>  );
+};
 
-export default Main
+export default Main;
