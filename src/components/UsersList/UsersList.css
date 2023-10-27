@@ -14,8 +14,8 @@
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  width: 250px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height */
+  width: 300px; 
+  height: 350px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,11 @@
 
 .user-card-upper {
   flex: 1;
-  background-color: #4a90e2; 
   color: #fff; 
   padding: 40px;
   border-bottom: 1px solid #ddd; 
   position: relative; 
+  width: 100% ;
 }
 
 .user-card-lower {
@@ -41,8 +41,6 @@
   padding-bottom: 50px;
   color: #686870;
   padding: 4px;
-
-
 }
 
 .user-avatar {
@@ -50,13 +48,12 @@
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border: 3px solid #fff; 
   border-radius: 50%; 
   overflow: hidden; 
   background-color: #c2cad4;
-  margin-top: 30px;
 }
 
 .user-avatar img {
@@ -66,15 +63,18 @@
 }
 
 .user-name {
-  size: 120px;
+  font-weight: bold;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 60px ;
+}
+
+.user-contact{
+  font-size: 20px;
 
 }
 
 .user-card a {
   text-decoration: none;
-
 }
 
 /* Styling for smaller screens */

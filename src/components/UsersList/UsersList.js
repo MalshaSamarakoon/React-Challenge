@@ -59,7 +59,7 @@ const UsersList = () => {
                   <h2 className="user-name">
                     {user.firstName} {user.lastName}
                   </h2>
-                  <p className="user-email">{user.email}<br></br>{user.phone}</p>
+                  <p className="user-contact">{user.email}<br></br>{user.phone}</p>
                 </div>
               </Link>
             </div>
