@@ -107,7 +107,7 @@ function UserDetails() {
                         <i className="ti-user icon-box medium rounded-3 mb-3"></i>
                         <h3 className="h5 mb-2">Contact</h3>
                         <p>
-                          {user.email}
+                          {user.email}<br></br>
                           {user.phone}
                         </p>
                       </div>
