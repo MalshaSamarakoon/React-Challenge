@@ -41,6 +41,7 @@ const UsersList = () => {
     .slice(pagesVisited, pagesVisited + usersPerPage)
     .map((user) => {
       return (
+        <div className="page">
         <div className="user-card-list">
            
           <div key={user.id} className="user-card">
@@ -59,7 +60,7 @@ const UsersList = () => {
               <p className="user-email">{user.email}</p>
               <p className="user-phone">{user.phone}</p>
               <Link to={`/user/${user.id}`}> click </Link>
-
+              </div>
             </div>
           </div>
         </div>

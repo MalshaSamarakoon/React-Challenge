@@ -1,12 +1,12 @@
 /* Styling for larger screens */
 .user-card-list {
-  display: grid;
-  gap: 20px;
-  background-color: #f0f0f0;
-  padding: 20px;
-  justify-items: center;
-  grid-template-columns: repeat(5, 1fr);
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 20px; /* Add some space between the cards */
+  padding: 20px; /* Add padding around the cards */
+  margin: 20px; /* Add a margin to the entire container */
 }
 
 .user-card {
@@ -14,11 +14,13 @@
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  width: 250px;
+  width: 250px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
   text-align: center;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  align-items: center;
 }
 
 .user-card-upper {
@@ -34,7 +36,7 @@
   flex: 1;
   background-color: #fff; 
   padding-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #686870;
 }
 
@@ -74,9 +76,15 @@
 
   } 
   .user-card {
-    width: 100%;
-    margin-bottom: 20px;
-    justify-items: center;
+    border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
   }}
 

@@ -1,22 +1,16 @@
+.container {
+  margin-top: 60px;
 
-.user-detail {
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f7f7f7;
+  max-width: 1700px;
+}
+
+.custom-card, .card {
+  width: 400px !important; 
 }
 
 .user-image img {
-  max-width: 150px;
-  max-height: 150px;
-  border: 2px solid #3498db;
-  border-radius: 50%;
-}
-
-.user-details {
-  margin-top: 20px;
+  max-width: 10px;
+  max-height: 10px;
 }
 
 .user-details h2 {
@@ -29,17 +23,63 @@
   margin: 5px 0;
 }
 
-.go-back-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
+ .icon-box.medium {
+     font-size: 20px;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     color: #ffffff;
+
+ }
+ 
+ .card-sub-set{
+  margin-top: 10px;
+ }
+ .icon-box {
+     font-size: 30px;
+     margin-bottom: 33px;
+     display: inline-block;
+     color: #ffffff;
+     height: 65px;
+     width: 65px;
+     line-height: 65px;
+     background-color: #8b0000;
+     text-align: center;
+     border-radius: 0.3rem;
+ }
+
+ .rounded-3 {
+     border-radius: 0.3rem !important;
+ }
+ 
+ .display-25 {
+     font-size: 1.4rem;
+ }
+ 
+ .text-primary, .text-primary-hover:hover {
+     color: #2f3033 !important;
+ }
+ 
+ p {
+     margin: 0 0 20px;
+ }
+ 
+ .mb-1-6, .my-1-6 {
+     margin-bottom: 1.6rem;
+ }
+
+ table {
+  border-collapse: collapse;
+  width: 100%;
+    font-size: 18px; 
+  }
+
+th, td {
+  padding: 4px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; 
 }
 
-.go-back-button:hover {
-  background-color: #297cb8;
+th {
+  height: 50px; 
 }
