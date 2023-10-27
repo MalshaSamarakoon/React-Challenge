@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./UsersList.css";
-import axios from "axios"; 
+import axios from "axios";
 import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
 
@@ -42,25 +42,26 @@ const UsersList = () => {
     .map((user) => {
       return (
         <div className="page">
-        <div className="user-card-list">
-           
-          <div key={user.id} className="user-card">
-            <div
-              className="user-card-upper"
-              style={{ backgroundColor: generateRandomColor() }}
-            >
-              <div className="user-avatar">
-                <img src={user.image} alt={user.username} />
+          <div className="user-card-list">
+            <div key={user.id} className="user-card">
+              <div
+                className="user-card-upper"
+                style={{ backgroundColor: generateRandomColor() }}
+              >
+                <Link to={`/user/${user.id}`}>
+                  <div className="user-avatar">
+                    <img src={user.image} alt={user.username} />
+                  </div>
+                </Link>
               </div>
-            </div>
-            <div className="user-card-lower">
-              <h2 className="user-name">
-                {user.firstName} {user.lastName}
-              </h2>
-              <p className="user-email">{user.email}</p>
-              <p className="user-phone">{user.phone}</p>
-              <Link to={`/user/${user.id}`}> click </Link>
-              </div>
+              <Link to={`/user/${user.id}`}>
+                <div className="user-card-lower">
+                  <h2 className="user-name">
+                    {user.firstName} {user.lastName}
+                  </h2>
+                  <p className="user-email">{user.email}<br></br>{user.phone}</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -74,7 +75,7 @@ const UsersList = () => {
   };
   return (
     <div className="user-card-list">
-    {displayUsers}
+      {displayUsers}
       <ReactPaginate
         previousLabel={"<"}
         nextLabel={">"}
