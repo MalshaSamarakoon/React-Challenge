@@ -6,23 +6,20 @@ import NavBar from './components/NavBar';
 import UsersList from './components/UsersList/UsersList';
 
 function App() {
-
   const [isUsersListVisible, setUsersListVisible] = useState(false);
 
-const handleLoadUsers = () => {
-  setUsersListVisible(true);
-};
+  const handleLoadUsers = () => {
+    setUsersListVisible(true);
+  };
 
   return (
-    <>
-       <NavBar onLoadUsers={handleLoadUsers} />
+    <div className="app-container"> {/* Apply the margin to this div */}
+      <NavBar onLoadUsers={handleLoadUsers} />
       {isUsersListVisible && <UsersList />}
       <Main />
       <Footer />
-    </>
+    </div>
   );
 }
 
 export default App;
-
-

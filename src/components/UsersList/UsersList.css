@@ -14,13 +14,16 @@
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  width: 250px; 
-  height: 300px; 
+  width: 250px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
   text-align: center;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center; 
+  display: flex;
 }
 
 .user-card-upper {
